@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".BeforeTidur">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="#3F51B5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doa Sebelum Tidur"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:background="#08c">
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_baseline_pause_circle_filled_24"
+            android:onClick="pauseBtnClick"/>
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_baseline_play_circle_filled_24"
+            android:onClick="playBtnClick"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_baseline_stop_circle_24"
+            android:onClick="stopBtnClick"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#08c">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بِسْمِكَ اللّهُمَّ اَحْيَا وَ بِسْمِكَ اَمُوْتُ"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bismika Allahumma ahyaa wa bismika amuut"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Dengan nama-Mu ya Allah aku hidup, dan dengan nama-Mu aku mati”. (HR.Bukhari dan Muslim)."
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
