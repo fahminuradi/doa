@@ -5,39 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
     tools:context=".Hujan">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:background="#3F51B5">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Doa Ketika Turun Hujan"
-            android:textSize="30sp"
-            android:textColor="#fff"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:padding="16dp"/>
+        android:layout_height="300dp"
+        android:background="@drawable/hujan">
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="90dp"
         android:gravity="center"
-        android:background="@drawable/hujan">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:gravity="center"
+        android:outlineSpotShadowColor="#222"
+        android:outlineAmbientShadowColor="#222"
         android:background="#08c">
         <Button
             android:id="@+id/btn_pause"
@@ -51,8 +33,8 @@
 
         <Button
             android:id="@+id/btn_play"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:clickable="true"
             android:layout_margin="20dp"
             android:backgroundTint="@color/white"
@@ -77,14 +59,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#08c">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="اللَّهُمَّ صَيِّباً نَافِعاً"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textSize="30sp"
                 android:padding="16dp"/>
 
@@ -92,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Allahumma shoyyiban nafi'an"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:padding="16dp"/>
@@ -101,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ya Allah, turunkan lah pada kami hujan yang bermanfaat."
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textStyle="italic"
                 android:textSize="20sp"
                 android:padding="16dp"/>

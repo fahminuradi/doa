@@ -1,35 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
     tools:context=".Musibah">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:background="#3F51B5">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Doa Tekena Musibah"
-            android:textSize="30sp"
-            android:textColor="#fff"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:padding="16dp"/>
+        android:layout_height="300dp"
+        android:background="@drawable/musibah">
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="90dp"
         android:gravity="center"
+        android:outlineSpotShadowColor="#222"
+        android:outlineAmbientShadowColor="#222"
         android:background="#08c">
         <Button
             android:id="@+id/btn_pause"
@@ -43,8 +32,8 @@
 
         <Button
             android:id="@+id/btn_play"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:clickable="true"
             android:layout_margin="20dp"
             android:backgroundTint="@color/white"
@@ -69,14 +58,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#08c">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="إإنّاَ للهِ وإنَّا إِلَيْهِ رَاجِعُونَ اللَّهُمَّ أجِرْنِي فِي مُصِيبَتي وأَخْلِفْ لِي خَيْراً مِنْها"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textSize="30sp"
                 android:padding="16dp"/>
 
@@ -84,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Innaa lillaahi wa inna ilaihi raaji’uun. Allâhumma ajirnî fî mushîbatî wa akhlif lî khairan minhâ."
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:padding="16dp"/>
@@ -92,7 +80,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:text="Sesungguhnya, kita adalah milik Allah, dan sesungguhnya kepada-Nyalah kita akan Kembali. Ya Allah, karuniakanlah padaku pahala dalam musibah yang menimpaku dan berilah aku ganti yang lebih baik daripadanya."
                 android:textStyle="italic"
                 android:textSize="20sp"

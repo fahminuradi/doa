@@ -5,30 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
     tools:context=".BeforeBelajar">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:background="#3F51B5">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Doa Sebelum belajar"
-            android:textSize="30sp"
-            android:textColor="#fff"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:padding="16dp"/>
+        android:layout_height="300dp"
+        android:background="@drawable/belajar">
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="90dp"
         android:gravity="center"
         android:background="#08c">
         <Button
@@ -43,8 +31,8 @@
 
         <Button
             android:id="@+id/btn_play"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:clickable="true"
             android:layout_margin="20dp"
             android:backgroundTint="@color/white"
@@ -69,14 +57,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#08c">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="رَبِّ زِدْنِي عِلْمًا وَارْزُقْنِيْ فَهْمًا وَاجْعَلْنِيْ مِنَ الصَّالِحِيْنَِ"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textSize="30sp"
                 android:padding="16dp"/>
 
@@ -84,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Robbi zidnii ‘ilman Warzuqnii fahmaa, Waj’alnii minash-shoolihiin."
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:padding="16dp"/>
@@ -92,7 +79,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:text="Ya Allah, tambahkanlah aku ilmu dan berilah aku kemampuan untuk memahaminya, dan jadikanlah aku termasuk golongan orang-orang yang sholeh."
                 android:textStyle="italic"
                 android:textSize="20sp"

@@ -5,31 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
-    tools:context=".BeforeTidur">
+    tools:context=".AfterTidur">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:background="#3F51B5">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Doa Bangun Tidur"
-            android:textSize="30sp"
-            android:textColor="#fff"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:padding="16dp"/>
+        android:layout_height="300dp"
+        android:background="@drawable/bangun">
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="90dp"
         android:gravity="center"
+        android:outlineSpotShadowColor="#222"
+        android:outlineAmbientShadowColor="#222"
         android:background="#08c">
         <Button
             android:id="@+id/btn_pause"
@@ -43,8 +33,8 @@
 
         <Button
             android:id="@+id/btn_play"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:clickable="true"
             android:layout_margin="20dp"
             android:backgroundTint="@color/white"
@@ -69,14 +59,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#08c">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="اَلْحَمْدُ لِلَّهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرِ"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textSize="30sp"
                 android:padding="16dp"/>
 
@@ -84,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Alhamdullillahilladzi ahyaanaa bada maa amaatanaa wa ilaihin nushur"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:padding="16dp"/>
@@ -92,7 +81,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#fff"
+                android:textColor="#08c"
                 android:text="Segala puji bagi-Mu, ya Allah, yang telah menghidupkan kembali diriku setelah kematianku, dan hanya kepada-Nya nantinya kami semua akan dihidupkan kembali.” (HR.Ahmad, Bukhari, dan Muslim)."
                 android:textStyle="italic"
                 android:textSize="20sp"

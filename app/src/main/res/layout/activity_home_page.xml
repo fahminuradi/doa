@@ -6,57 +6,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
     tools:context=".HomePage">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardBackgroundColor="#08c">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/brand"/>
-
-        </androidx.cardview.widget.CardView>
+            android:layout_height="220dp"
+            android:background="@drawable/brand">
+        </RelativeLayout>
 
     </RelativeLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8"
         android:layout_marginTop="10dp"
-        android:rowCount="6"
-        android:columnCount="2"
+        android:layout_weight="8"
         android:alignmentMode="alignMargins"
+        android:columnCount="2"
         android:columnOrderPreserved="false"
-        android:padding="14dp">
+        android:padding="14dp"
+        android:rowCount="6">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/crd_orang_tua"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -64,32 +57,33 @@
                     android:layout_gravity="center"
                     android:text="Doa Kedua Orang Tua"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/crd_hujan"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#08c"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
 
                 <TextView
@@ -98,30 +92,31 @@
                     android:layout_gravity="center"
                     android:text="Doa Ketika Turun Hujan"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/crd_b_tidur"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="16dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
 
                 <TextView
@@ -130,30 +125,31 @@
                     android:layout_gravity="center"
                     android:text="Doa Sebelum tidur"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/crd_a_tidur"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="16dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -161,8 +157,8 @@
                     android:layout_gravity="center"
                     android:text="Doa bangun Tidur"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -171,19 +167,19 @@
             android:id="@+id/crd_b_belajar"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="16dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
 
                 <TextView
@@ -192,30 +188,31 @@
                     android:layout_gravity="center"
                     android:text="Doa Sebelum Belajar"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/crd_pakaian"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="16dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -223,8 +220,8 @@
                     android:layout_gravity="center"
                     android:text="Doa Berpakaian"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -233,19 +230,19 @@
             android:id="@+id/crd_musibah"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="16dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
 
                 <TextView
@@ -254,30 +251,31 @@
                     android:layout_gravity="center"
                     android:text="Doa Terkena Musibah"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/crd_kendaraan"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="16dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="#08c"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="16dp"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -285,8 +283,8 @@
                     android:layout_gravity="center"
                     android:text="Doa Naik Kendaraan"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
